@@ -1,0 +1,44 @@
+public function get_ques_list(){
+        $sql = "SELECT * FROM  questions ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $i=0;
+            foreach ($query->result() as $row){
+                $ques_list[$i]['ques_id']    = $row->ques_id;
+                $ques_list[$i]['ques_name']  = $row->ques_name;
+                $ques_list[$i]['ques_slug']  = $row->ques_slug;
+                $ques_list[$i]['ques_date']  = $row->ques_date;
+                $ques_list[$i]['ques_posts'] = $row->ques_date;
+                $i++;
+            }
+            return $ques_list;
+        }else{
+            return false;
+        }
+    }
+    public function update_ques($ques_id){
+
+        //$slug = url_title($this->input->post('title'), 'dash', TRUE);
+        $string = $this->input->post('ques_name');
+        $slug = str_replace(' ', '-', $string);
+        
+        $query = $this->db->get_where('ques', array('ques_id' => $ques_id));
+        $ques_edite = $query->row_array();
+
+        $ques_db_data = array(
+            'ques_name'    => $this->input->post('ques_name'),
+            'ques_slug'    => $slug,
+            'ques_date'    => $this->input->post('ques_date'),
+            'ques_discont' => $this->input->post('ques_discont'),
+        );
+        $this->db->where('ques_id' , $ques_id);
+        $this->db->update('ques', $ques_db_data);
+
+        $ques_desc = array(
+            'ques_id' => $ques_id,
+            'prmeta_key' => 'ques_desc',
+            'prmeta_value' => $this->input->post('ques_desc')
+        );
+        $this->db->where ('ques_id' , $ques_id);
+        $this->db->update('quess_meta',  $ques_desc );
+    }

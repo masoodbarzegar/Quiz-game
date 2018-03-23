@@ -1,0 +1,1210 @@
+@font-face {
+  font-family: IRANSansWeb;
+  src: url(../fonts/IRANSansWeb.eot) format('eot'), url(../fonts/IRANSansWeb.woff) format('woff'), url(../fonts/IRANSansWeb.ttf) format('truetype')
+}
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes heartmove {
+  from {
+    transform: scale(1,1);
+    opacity: .4;
+  }
+  to {
+    transform: scale(1.3,1.3);
+    opacity: 1;
+  }
+}
+
+*{
+  font-family: IRANSansWeb !important;
+}
+.refresh-btn{
+  top: 0;
+  padding: 5px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  animation: infinite-spinning 2s infinite;
+  webkit-animation: infinite-spinning 2s infinite;
+}
+input[type="submit" i]{
+  border-width: 0px !important;
+}
+
+/**              *******************    Login style               *******************    **/
+/** Login style **/
+
+#start{
+font-family: IRANSansWeb !important;
+direction: rtl;
+text-align: justify;
+background-color: #2d99a6;
+
+}
+h1 h2 h2 h4 h5 p {
+font-family: IRANSansWeb !important;
+}
+*{
+font-family: IRANSansWeb !important;
+}
+#start .loginform-div{
+font-size: 20px;
+text-align: center;
+}
+#start .card-body{
+background-color: white;
+}
+#start .card-header{
+background-color: #ffa200;
+max-height: 100px;
+}
+#start .bordered {
+position: relative;
+padding: 8px 8px 32px 8px;
+z-index: 2;
+}
+
+#start .bordered:after {
+background: linear-gradient(-45deg, transparent 16px, #ffa200 0), linear-gradient(45deg, transparent 16px, #ffa200 0);
+background-repeat: repeat-x;
+background-size: 18px 26px;
+content: " ";
+display: block;
+position: absolute;
+bottom: -27px;
+left: 0px;
+width: 100%;
+height: 38px;
+z-index: -1;
+}
+#start .card-body{
+margin-bottom: 30px;
+border-radius: 25px;
+margin-top: -16px;
+}
+#start .card-text{
+padding-top: 40px;
+}
+#start .bazikon{
+background: -webkit-linear-gradient(#fdc52a, #fe8922);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#start .mobile-input{
+margin-bottom: 14px;
+}
+#start .email-input{
+margin-bottom: 14px;
+}
+#start .sub1{
+background-color: #9dd60b;
+color: white;
+min-width: 150px;
+font-weight: 600;
+border-radius: 18px;
+}
+#start .login-form-entry{
+display: inline-block;
+}
+#start .modal-header .close{
+padding: 0;
+margin: 0;
+}
+#start .modal-footer>:not(:last-child){
+margin-right: 0;
+margin-left: 5px;
+}
+#start .modal-footer>:not(:first-child){
+margin-left: 0;
+margin-right: 5px;
+}
+
+#start .submit-wrap{
+clear: both;
+position: relative;
+}
+#start .submit{
+z-index: -1;
+}
+/** Mobile media query **/
+@media screen and (max-width: 800px) and (min-width: 150px) {
+#start .loginform-div{
+margin-top: 0px;
+}
+.hiden{
+display: none;
+}
+#start .oxinup-logo{
+margin-top: -40px;
+max-width: 270px;
+}
+#start .bazikon{
+font-weight: 700;
+font-size: 23px;
+}
+#start p{
+font-size: 15px
+}
+}
+
+/** Desktop media query **/
+@media screen and (max-width: 2000px) and (min-width: 801px) {
+#start .loginform-div{
+margin-top: 100px;
+}
+#start .oxinup-logo{
+max-width: 282px;
+margin-top: -35px;
+}
+#start .bazikon{
+font-weight: 700;
+font-size: 44px;
+}
+#start .captcha-sec{
+float: left;
+}
+#start .cpatcha-input-secP{
+float: right;
+}
+}
+/**              *******************    In Game style               *******************    **/
+/** In Game style **/
+#game{
+font-family: IRANSansWeb !important;
+direction: rtl;
+text-align: justify;
+background: url(../img/bg.svg) repeat center center;
+}
+#game .gameMainSection{
+direction: rtl;
+text-align: justify;
+margin-top: 1px;
+}
+.timer {
+margin-top: 149px;
+}
+.health{
+margin-top: 201px;
+margin-right: 32px;
+}
+.heart{
+width: 30px;
+}
+.health .heart-off{
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+}
+.heart-on{
+}
+.health .heart-mov{
+animation: heartmove 2s ease-in 0s infinite alternate;
+-o-animation: heartmove 2s ease-in 0s infinite alternate;
+-moz-animation: heartmove 2s ease-in 0s infinite alternate;
+-webkit-animation: heartmove 2s ease-in 0s infinite alternate;
+}
+
+.questionBox{
+background-color: #ffe4ad;
+border-radius: 20px;
+min-height: 200px;
+margin-top: -28px;
+border-style: solid;
+border-width: 5px;
+border-color: white;
+}
+.lvl-number{
+max-width: 94px;
+margin: 0 auto;
+display: flex;
+margin-bottom: -55px;
+margin-top: -39px;
+}
+.lvl-number-step{
+font-size: 3.5rem;
+color: white;
+font-weight: 700;
+text-align: center;
+margin-top: -23px;
+}
+.questionPatagraph{
+text-align: center;
+direction: ltr;
+margin: 0 auto;
+max-width: 90%;
+margin-top: -25px;
+}
+.sub0{
+color: white;
+min-width: 120px;
+font-weight: 600;
+border-radius: 18px;
+}
+.sub1{
+background-color: #c2c2c2;
+}
+.sub2{
+background-color: #9dd60b;
+}
+.answers-btn{
+direction: ltr;
+background: #ffc000;
+border-radius: 15px;
+padding: 21px 0px 0px 0px;
+max-width: 89%;
+margin: 0 auto;
+min-height: 66px;
+-webkit-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.14);
+-moz-box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.14);
+box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.14);
+
+}
+.nex-question-btn{
+text-align: center;
+}
+.asnwers-btns-sections{
+text-align: center;
+}
+input[type="radio"]:checked{
+display: none;
+}
+input[type="radio"]{
+display: none;
+}
+form input[type="radio"]:checked + p {
+background-color: #ff9000;
+}
+.emtiaz-section{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+.circle-emtiaz-khamosh{
+height: 30px;
+width: 30px;
+border-radius: 100%;
+background: -webkit-linear-gradient(#727b9c, #585d7a);
+display: inline-block;
+box-shadow: 0px 1px 1px 0.5px rgba(0, 0, 0, 0.18);
+}
+.circle-emtiaz-on{
+height: 30px;
+width: 30px;
+border-radius: 100%;
+background: -webkit-linear-gradient(#2fe03a, #176914);
+display: inline-block;
+box-shadow:0px 1px 1px 0.5px rgba(0, 0, 0, 0.18);
+}
+.prize-main{
+max-width: 100%;
+}
+.footer{
+text-align: justify;
+background: url(../assets/img/zigzag.svg) no-repeat center center;
+min-height: 20px;
+}
+.khate-zire-1{
+border-top: 2px solid #3b435a;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+margin-top: -5px;
+/* margin-right: 33px; */
+border-radius: 120px;
+min-width: 100%;
+}
+.khate-zire-2{
+border-top: 2px solid #3b435a;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+margin-top: -5px;
+/* margin-right: 33px; */
+border-radius: 120px;
+min-width: 100%;
+}
+.khate-zire-3{
+border-top: 2px solid #3b435a;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+margin-top: -5px;
+/* margin-right: 33px; */
+border-radius: 120px;
+min-width: 100%;
+}
+.khate-zire-4{
+border-top: 2px solid #3b435a;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+margin-top: -5px;
+/* margin-right: 33px; */
+border-radius: 120px;
+min-width: 100%;
+}
+.khate-zire-5{
+border-top: 2px solid #3b435a;
+border-bottom: 0;
+border-left: 0;
+border-right: 0;
+margin-top: -5px;
+/* margin-right: 33px; */
+border-radius: 120px;
+min-width: 100%;
+}
+.gifimgs{
+margin-top:-22px;
+}
+.gift{
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+}
+.gift-ok{
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+filter: grayscale(0%);
+}
+/** Mobile media query **/
+@media screen and (max-width: 800px) and (min-width: 310px) {
+.hiden{
+display: none;
+}
+.logo-img{
+position: absolute;
+max-width: 267px;
+margin-bottom: 21px;
+margin-top: -68px;
+margin-right: -138px;
+}
+.heart-off{
+max-width: 30px;
+}
+.heart-on{
+max-width: 30px;
+}
+.health{
+margin-right: 0px;
+margin-top: 56px;
+}
+.logo{
+text-align: center;
+}
+.timer {
+margin-top: 44px;
+}
+.answers-btn{
+margin-bottom: 15px;
+padding: 15px 5px 0px 5px;
+font-size: 13px;
+}
+.asnwers-btns-sections1{
+margin-top: -43px;
+}
+
+.circle-emtiaz-khamosh{
+height: 14px;
+width: 14px;
+}
+.circle-emtiaz-on{
+height: 14px;
+width: 14px;
+border-radius: 100%;
+background: -webkit-linear-gradient(#2fe03a, #176914);
+display: inline-block;
+box-shadow:0px 1px 1px 0.5px rgba(0, 0, 0, 0.18);
+}
+.header-tops-items{
+margin-top: 0px;
+}
+.question-allparts{
+margin-top: 19px
+}
+#DateCountdown{
+max-width: 62px;
+}
+.prize-list-1{
+padding-right: 5px;
+padding-left: 5px;
+
+}
+.prize-list-2{
+padding-right: 5px;
+padding-left: 5px;
+}
+.prize-list-3{
+padding-right: 5px;
+padding-left: 5px;
+}
+.prize-list-4{
+padding-right: 5px;
+padding-left: 5px;
+}
+.prize-list-5{
+padding-right: 5px;
+padding-left: 5px;
+}
+.prize-list-6{
+padding-right: 5px;
+padding-left: 5px;
+}
+.dayere-emtiyazat{
+margin-top: -10px;
+}
+}
+@media screen and (max-width: 335px) and (min-width: 150px){
+.logo-img{
+position: absolute;
+max-width: 267px;
+margin-bottom: 21px;
+margin-top: -77px;
+    margin-right: -136px;
+}
+}
+/** Desktop media query **/
+@media screen and (max-width: 2000px) and (min-width: 801px) {
+.logo-img{
+max-width: 500px;
+margin-right: -57px;
+margin-bottom: -42px;
+}
+.answers-btn{
+margin-bottom: 15px;
+}
+.asnwers-btns-sections1{
+margin-top: -47px;
+}
+
+.footer{
+display: none;
+}
+}
+/* timer Styles */
+.time_circles > div > span{
+color: white;
+}
+.time_circles > div > h4{
+color: white;
+}
+/* استایل های دایره های امتیاز */
+@media screen and (max-width: 2000px) and (min-width: 801px){
+.gifimgs{
+margin-top: -32px;
+}
+.dayere-emtiyazat{
+margin-top: -17px;
+}
+}
+/**              *******************    Result page style               *******************    **/
+/** Result style **/
+#finish {
+font-family: IRANSansWeb !important;
+direction: rtl;
+text-align: justify;
+background-color: #1b9088;
+color: white;
+
+}
+#finish .gameMainSection{
+text-align: center;
+}
+.winergif{
+max-width: 292px;
+}
+.winerPrize-code{
+margin-bottom: 20px;
+}
+.prizeDesc-code{
+line-height: 29px;
+font-size: 12px;
+text-align: justify;
+direction: rtl;
+}
+.prizeDesc-money{
+line-height: 29px;
+font-size: 12px;
+text-align: justify;
+direction: rtl;
+}
+.backToSite1{
+white-space: normal;
+}
+.backToSite2{
+white-space: normal;
+margin-bottom: 20px;
+
+}
+/** Mobile media query **/
+@media screen and (max-width: 800px) and (min-width: 150px) {
+.hiden{
+display: none;
+}
+#finish .gameMainSection{
+margin-top: 10px;
+}
+.backToSite1{
+font-size: 12px;
+margin-bottom: 20px;
+}
+.backToSite2{
+font-size: 12px;
+}
+.backToSite3{
+font-size: 12px;
+}
+.winergif{
+max-width: 196px;
+}
+.prizeDesc-money{
+font-size: 12px;
+}
+.prizeDesc-code{
+font-size: 12px;
+line-height: 20px;
+}
+.prize-title-money{
+font-size: 15px;
+line-height: 32px;
+}
+.prize-title-code{
+font-size: 15px;
+margin-bottom: 0px;
+line-height: 32px;
+
+}
+}
+/** Desktop media query **/
+@media screen and (max-width: 2000px) and (min-width: 801px) {
+#finish .gameMainSection{
+margin-top: 20px;
+}
+}
+
+.time_circles {
+position: relative;
+            width: 100%;
+            height: 100%;
+          }
+            .time_circles > div {
+              position: absolute;
+              text-align: center;
+            }
+              .time_circles > div > h4 {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Century Gothic', Arial;
+                line-height: 1;
+              }
+              .time_circles > div > span {
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-family: 'IRANSansWeb', Arial;
+                line-height: 1;
+                font-weight: bold;
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  body{
+    font-family: IRANSansWeb !important;
+    text-align: justify;
+  }
+  #start{
+    background-color: #2d99a6;
+  }
+  #finish{
+    background-color: #1b9088;
+    color: white;
+  }
+  #Game{
+    background-image: url('../static/img/backgound.jpg');
+    background-repeat: repeat;
+  }
+  h1 h2 h2 h4 h5 p {
+    font-family: IRANSansWeb !important;
+  }
+
+  .loginform-div{
+    font-size: 20px;
+    text-align: center;
+  }
+  #finish .gameMainSection{
+    text-align: center;
+  }
+  .winergif{
+    max-width: 292px;
+  }
+  .winerPrize-code{
+    margin-bottom: 20px;
+  }
+  .prizeDesc-code{
+    line-height: 29px;
+    font-size: 12px;
+    text-align: justify;
+    direction: rtl;
+  }
+  .prizeDesc-money{
+    line-height: 29px;
+    font-size: 12px;
+    text-align: justify;
+    direction: rtl;
+  }
+  .backToSite1{
+    white-space: normal;
+    margin-bottom: 60px;
+  }
+  .backToSite2{
+    white-space: normal;
+  }
+  .card-body{
+    background-color: white;
+  }
+  .card-header{
+    background-color: #ffa200;
+      max-height: 100px;
+  }
+  .bordered {
+      position: relative;
+      padding: 8px 8px 32px 8px;
+      z-index: 2;
+  }
+
+  .bordered:after {
+    background: linear-gradient(-45deg, transparent 16px, #ffa200 0), linear-gradient(45deg, transparent 16px, #ffa200 0);
+        background-repeat: repeat-x;
+        background-size: 18px 26px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -27px;
+        left: 0px;
+        width: 100%;
+        height: 38px;
+        z-index: -1;
+  }
+  .card-body{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    margin-top: -16px;
+  }
+  .card-text{
+    padding-top: 64px;
+  }
+  .bazikon{
+    background: -webkit-linear-gradient(#fdc52a, #fe8922);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+  }
+  input{
+    font-size: 20px;
+  }
+  .mobile-input{
+  margin-bottom: 14px;
+
+
+  }
+  .email-input{
+  margin-bottom: 14px;
+
+  }
+  .captcha-input{
+
+  }
+  .form-group-custom{
+
+  }
+  .sub1{
+    background-color: #9dd60b;
+    color: white;
+    min-width: 150px;
+    font-weight: 600;
+    border-radius: 18px;
+  }
+  .login-form-entry{
+    display: inline-block;
+  }
+  .modal-header .close{
+    padding: 0;
+   margin: 0;
+  }
+  .modal-footer>:not(:last-child){
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .modal-footer>:not(:first-child){
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .gameMainSection{
+    direction: rtl;
+    text-align: justify;
+    margin-top: 1px;
+  }
+  .timer {
+    margin-top: 175px;
+  }
+  .health{
+    margin-top: 201px;
+    margin-right: 32px;
+  }
+    .health .heart{
+      width: 30px;
+    }
+    .health .heart-off{
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    /*  filter: grayscale(100%);
+    }
+    .health .heart-mov{
+      animation: heartmove 2s ease-in 0s infinite alternate;
+      -o-animation: heartmove 2s ease-in 0s infinite alternate;
+      -moz-animation: heartmove 2s ease-in 0s infinite alternate;
+      -webkit-animation: heartmove 2s ease-in 0s infinite alternate;
+    }
+  .questionBox{
+    background-color: #ffe4ad;
+    border-radius: 20px;
+    min-height: 240px;
+    margin-top: -28px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  .lvl-number{
+    max-width: 94px;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: -55px;
+        margin-top: -39px;
+  }
+  .lvl-number-step{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+        margin-top: -23px;
+  }
+  .questionPatagraph{
+    text-align: center;
+        direction: ltr;
+        margin: 0 auto;
+        max-width: 90%;
+        margin-top: -25px;
+  }
+  .sub0{
+    color: white;
+    min-width: 120px;
+    font-weight: 600;
+    border-radius: 18px;
+  }
+  .sub1{
+      background-color: #c2c2c2;
+  }
+  .sub2{
+    background-color: #9dd60b;
+  }
+  .answers-btn{
+    background: #ffc000;
+        border-radius: 15px;
+        padding: 21px 0px 0px 0px;
+        max-width: 89%;
+        margin: 0 auto;
+        min-height: 66px;
+  }
+  .nex-question-btn{
+    position: relative;
+    text-align: center;
+  }
+  .asnwers-btns-sections{
+    text-align: center;
+  }
+  input[type="radio"]:checked{
+  display: none;
+  }
+  input[type="radio"]{
+  display: none;
+  }
+  form input[type="radio"]:checked + p {
+    background-color: #ff9000;
+    -webkit-box-shadow: inset 0px 0px 100px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 100px -24px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 100px -24px rgba(0,0,0,0.75);
+  }
+  .emtiaz-section{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .circle-emtiaz-khamosh{
+    background-color: #666d8a;
+   height: 30px;
+   width: 30px;
+   border-radius: 100%;
+   -webkit-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+   -moz-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+   box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+  margin-right: 5px;
+   display: inline-block;
+  }
+  .circle-emtiaz-on{
+    background-color: rgb(81,156,81);
+   height: 30px;
+   width: 30px;
+   border-radius: 100%;
+   -webkit-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+   -moz-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+   box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+  margin-right: 5px;
+   display: inline-block;
+  }
+  .emtiazha-soton1{
+  padding: 0px 0px 0px 0px;
+  margin-top: 20px;
+  }
+  .emtiazha-soton2{
+  padding: 0px 0px 0px 0px;
+  margin-top: -7px;
+  }
+  .emtiazha-soton3{
+  padding: 0px 0px 0px 0px;
+  margin-top: -4px;
+  }
+  .emtiazha-soton4{
+  padding: 0px 0px 0px 0px;
+  margin-top: -4px;
+  }
+  .emtiazha-soton5{
+  padding: 0px 0px 0px 0px;
+  margin-top: -4px;
+  }
+  .emtiazha-soton{
+  padding: 0px 0px 0px 0px;
+  }
+  .khatezir{
+    background-color: #3b435a;
+    height: 2px;
+    width: 70%;
+    border-radius: 13px;
+    margin-right: 13%;
+    position: absolute;
+  }
+  .khate1{
+  margin-top: 35px;
+  }
+  .khate2{
+  margin-top: 66px;
+  }
+  .khate3{
+  margin-top: 100px;
+  }
+  .khate4{
+  margin-top: 132px;
+  }
+  .khate5{
+  margin-top: 161px;
+  }
+  .gifts-rast{
+        margin-top: 32px;
+  }
+  .gift{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /*  filter: grayscale(100%);
+  }
+  .gift-ok{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+   /* filter: grayscale(0%);
+  }
+  /** Mobile media query **/
+ /* @media screen and (max-width: 800px) and (min-width: 310px) {
+      .hiden{
+          display: none;
+      }
+      .gameMainSection{
+        margin-top: 40px;
+      }
+      .backToSite1{
+      font-size: 9px;
+      margin-bottom: 20px;
+      }
+      .backToSite2{
+      font-size: 9px;
+      }
+      .backToSite3{
+        font-size: 9px;
+      }
+      .winergif{
+        max-width: 196px;
+      }
+      .prizeDesc-money{
+        font-size: 8px;
+      }
+      .prizeDesc-code{
+          font-size: 8px;
+      }
+      .prize-title-money{
+        font-size: 15px;
+            line-height: 32px;
+      }
+      .prize-title-code{
+        font-size: 15px;
+            line-height: 32px;
+      }
+      .loginform-div{
+        margin-top: 30px;
+      }
+      .hiden{
+        display: none;
+      }
+      .oxinup-logo{
+        margin-top: 10px;
+        max-width: 250px;
+      }
+      .bazikon{
+        font-weight: 700;
+          font-size: 23px;
+      }
+      p{
+        font-size: 15px
+      }
+      .hiden{
+        display: none;
+      }
+      .logo-img{
+        max-width: 148px;
+            margin-bottom: 12px;
+      }
+      .heart-off{
+        max-width: 17px;
+      }
+      .heart-on{
+        max-width: 17px;
+      }
+      .health{
+        margin-right: 0px;
+        margin-top: 56px;
+      }
+      .logo{
+        text-align: center;
+      }
+      .timer {
+      margin-top: 54px;
+      }
+      .logo-img{
+        max-width: 110px;
+          margin-bottom: 21px;
+          margin-top: 24px;
+      }
+      .answers-btn{
+        margin-bottom: 15px;
+      }
+      .asnwers-btns-sections1{
+        margin-top: 30px;
+      }
+      .gifts-10-hezar{
+        max-width: 100px;
+      }
+      .gifts-40-hezar{
+        max-width: 100px;
+      }
+      .gifts-70-hezar{
+        max-width: 100px;
+        margin-top: 22px;
+      }
+      .gifts-100-hezar{
+        max-width: 100px;
+            margin-top: 22px;
+      }
+      .gifts-50-hezar{
+        max-width: 100px;
+            margin-top: 22px;
+      }
+      .gifts-coin{
+        max-width: 100px;
+            margin-top: 22px;
+      }
+      .gifts-rast{
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+
+
+      .circle-emtiaz-khamosh{
+        height: 15px;
+          width: 15px;
+      }
+      .gifts-rast {
+           margin-top: 0px;
+      }
+      .gifts-chap{
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      .khate1 {
+        display: none;
+      }
+      .khate2 {
+        display: none;
+      }
+      .khate3 {
+        display: none;
+      }
+      .khate4 {
+        display: none;
+      }
+      .khate5 {
+        display: none;
+      }
+      .emtiazha-soton1{
+            margin-top: 0px;
+      }
+      .emtiazha-soton2{
+        margin-top: -2px;
+      }
+      .emtiazha-soton3{
+        margin-top: 8px;
+      }
+      .emtiazha-soton4{
+          margin-top: -2px;
+      }
+      .emtiazha-soton5{
+        margin-top: 17px;
+      }
+      .circle-emtiaz-khamosh{
+        margin-right: 0px;
+      }
+  }
+
+  /** Desktop media query **/
+  /*@media screen and (max-width: 2000px) and (min-width: 801px) {
+    .gameMainSection{
+      margin-top: 80px;
+    }
+    .loginform-div{
+      margin-top: 100px;
+      }
+      .oxinup-logo{
+        max-width: 350px;
+        margin-top: -35px;
+      }
+      .bazikon{
+        font-weight: 700;
+          font-size: 44px;
+      }
+      .captcha-sec{
+        float: left;
+      }
+      .cpatcha-input-secP{
+        float: right;
+    }
+    .logo-img{
+      max-width: 500px;
+    margin-right: -119px;
+    margin-bottom: -42px;
+    }
+    .answers-btn{
+      margin-bottom: 15px;
+    }
+    .asnwers-btns-sections1{
+      margin-top: -47px;
+    }
+    .gifts-10-hezar{
+      max-width: 126px;
+    }
+    .gifts-40-hezar{
+      max-width: 126px;
+    }
+    .gifts-70-hezar{
+      max-width: 126px;
+          margin-top: 22px;
+    }
+    .gifts-100-hezar{
+      max-width: 126px;
+          margin-top: 22px;
+    }
+    .gifts-50-hezar{
+      max-width: 126px;
+          margin-top: 22px;
+    }
+    .gifts-coin{
+      max-width: 126px;
+          margin-top: 22px;
+    }
+  }
+  /* timer Styles */
+  /*.time_circles > div > span{
+    color: white;
+  }
+  .time_circles > div > h4{
+      color: white;
+  }
+
+          /*Question page*/
+
+          /* Timer */
+          .time_circles {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+            .time_circles > div {
+              position: absolute;
+              text-align: center;
+            }
+              .time_circles > div > h4 {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Century Gothic', Arial;
+                line-height: 1;
+              }
+              .time_circles > div > span {
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-family: 'IRANSansWeb', Arial;
+                line-height: 1;
+                font-weight: bold;
+              }

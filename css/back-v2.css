@@ -1,0 +1,855 @@
+ @font-face {
+        font-family: IRANSans;
+        src: url('../fonts/IRANSans.eot'); /* IE9 Compat Modes */
+        src: url('../fonts/IRANSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                 url('../fonts/IRANSans.woff2') format('woff2'), /* Super Modern Browsers */
+                 url('../fonts/IRANSans.woff') format('woff'), /* Pretty Modern Browsers */
+                 url('../fonts/IRANSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+      }
+*{
+    font-family: IRANSans;
+}
+.oxinup-logo{
+      margin-top: 10px;
+      max-width: 250px;
+    }
+body {
+    direction: rtl;
+}
+.navbar{
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+.navbar-header{
+	float: right !important;
+}
+footer {
+    margin: 50px 0;
+}
+/*---------------- General -------------------*/
+label{
+    font-size: 14px;
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="number"],
+select{
+    border: 0px !important;
+    border-bottom: 1px solid #ccc !important;
+    padding: 5px;
+    display: block;
+    width: 500px;
+    direction:ltr;
+}
+input[type="submit"]{
+    margin-top: 10px;
+}
+textarea{
+    padding: 5px;
+    display: block;
+    width: 100%;
+    min-height: 300px;
+}
+
+.navbar{
+	min-height: auto;
+}
+.navbar-inverse .navbar-nav>li>a{
+	padding: 10px;
+	color: rgba(256,256,256,.7);
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #fff;
+}
+.navbar-brand{
+	height: auto;
+	padding: 10px 0px;
+}
+
+/* Outer */
+.popup {
+    z-index: 10;
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+
+    max-width:700px;
+    width:90%;
+    padding:20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+.popup-inner h2{
+    margin: 0px 0px 50px;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+#admin{
+
+}
+    .admin-title{
+        background-color: #efefef;
+        padding: 10px;
+        text-align: center;
+    }
+    #admin .button{
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: rebeccapurple;
+        color: #fff;
+        margin-bottom: 15px;
+        float: left;
+        text-decoration: none;
+    }
+    #admin .admin-nav{
+        float: right;
+        text-align: center;
+    }
+        #admin .admin-nav .admin-nav-wrap{
+            background-color: rgba(0,0,0,1);
+            border: 1px solid #000;
+            display: inline-block;
+            position: relative;
+            float: right; 
+            margin: 10px;
+            width: 100%;
+            text-decoration: none;
+            transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+        }
+        #admin .admin-nav .admin-nav-wrap a{
+            text-decoration: none;
+        }
+        #admin .admin-nav .admin-nav-wrap:hover{
+            background-color: #fff;   
+        }
+        #admin .admin-nav .admin-nav-wrap:hover .admin-nav-text{
+            color: #000;   
+        }
+
+            #admin .admin-nav .admin-nav-wrap i{
+                
+            }
+            #admin .admin-nav .admin-nav-wrap .admin-nav-text{
+                margin: 0px;
+                color: #fff;
+                font-size: 20px;
+                transition: all .5s ease;
+                -o-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -webkit-transition: all .5s ease;
+            }
+            #admin .admin-nav-submenu-wrap{
+                display: none;
+                list-style: none;
+                position: absolute;
+                width: 100%;
+                margin: 0px ;
+                padding: 0px;
+            }
+            #admin .admin-nav-wrap:hover .admin-nav-submenu-wrap{
+                display: block;
+            }
+                #admin .admin-nav-submenu-wrap li{
+                    display: block;
+                    margin-top: 5px;
+                    width: 100%;
+                }
+                #admin .admin-nav-submenu-wrap li a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 0px 10px;
+                    background-color: #000;
+                }
+
+
+    /*---- Admin edite list -----*/
+    #edite_list{
+
+    }
+        #edite_list .list-head-wrapper{
+            clear:both;
+
+        }
+            .list-head{
+                float: right;
+                background-color: #efefef;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #aaa;
+                font-size:18px;
+            }
+        #edite_list .list-body-wrapper{
+
+        }
+            .list-col{
+                float: right;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #aaa;
+                height: 45px;   
+            }
+                .list-col .disc-used{
+                    color:red;
+                }
+                .list-col .disc-valid{
+                    color:green;
+                }
+    /*---- Admin edite page -----*/
+    #ques_title{
+        width: 100%;
+    }
+    label.ques_ans{
+        width: 200px;
+        display: inline-block;
+    }
+    input.ques_ans{
+        display: inline-block;
+    }
+    .ques_level, .c_ans{
+        margin-top: 25px;
+        display: inline-block;
+        width: 200px;
+    }
+    #ques_level , #c_ans{
+        width: 50px;
+        display: inline-block;
+    }
+    #submit{
+        
+    }
+
+
+      @font-face {
+          font-family: IRSans;
+          src: url('../fonts/IRANSans.eot'); /* IE9 Compat Modes */
+          src: url('../fonts/IRANSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                 url('../fonts/IRANSans.woff2') format('woff2'), /* Super Modern Browsers */
+                 url('../fonts/IRANSans.woff') format('woff'), /* Pretty Modern Browsers */
+                 url('../fonts/IRANSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+        }
+      @-webkit-keyframes infinite-spinning {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      .refresh-btn{
+        top: 0;
+        padding: 5px;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        animation: infinite-spinning 2s infinite;
+        webkit-animation: infinite-spinning 2s infinite;
+      }
+        
+        body{
+          font-family: IRSans !important;
+          text-align: justify;
+        }
+        #start{
+          background-color: #2d99a6;
+        }
+        #finish{
+          background-color: #1b9088;
+          color: white;
+        }
+        #Game{
+          background-image: url("<?php echo $blogBaseUrl; ?>/static/img/backgound.jpg");
+          background-repeat: repeat;
+        }
+        h1 h2 h2 h4 h5 p {
+          font-family: IRSans !important;
+        }
+        *{
+            font-family: IRSans !important;
+        }
+        .loginform-div{
+          font-size: 20px;
+          text-align: center;
+        }
+        #finish .gameMainSection{
+          text-align: center;
+        }
+        .winergif{
+          max-width: 292px;
+        }
+        .winerPrize-code{
+          margin-bottom: 20px;
+        }
+        .prizeDesc-code{
+          line-height: 29px;
+          font-size: 12px;
+          text-align: justify;
+          direction: rtl;
+        }
+        .prizeDesc-money{
+          line-height: 29px;
+          font-size: 12px;
+          text-align: justify;
+          direction: rtl;
+        }
+        .backToSite1{
+          white-space: normal;
+          margin-bottom: 60px;
+        }
+        .backToSite2{
+          white-space: normal;
+        }
+        .card-body{
+          background-color: white;
+        }
+        .card-header{
+          background-color: #ffa200;
+            max-height: 100px;
+        }
+        .bordered {
+            position: relative;
+            padding: 8px 8px 32px 8px;
+            z-index: 2;
+        }
+
+        .bordered:after {
+          background: linear-gradient(-45deg, transparent 16px, #ffa200 0), linear-gradient(45deg, transparent 16px, #ffa200 0);
+              background-repeat: repeat-x;
+              background-size: 18px 26px;
+              content: " ";
+              display: block;
+              position: absolute;
+              bottom: -27px;
+              left: 0px;
+              width: 100%;
+              height: 38px;
+              z-index: -1;
+        }
+        .card-body{
+          margin-bottom: 30px;
+          border-radius: 25px;
+          margin-top: -16px;
+        }
+        .card-text{
+          padding-top: 64px;
+        }
+        .bazikon{
+          background: -webkit-linear-gradient(#fdc52a, #fe8922);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+        input{
+          font-size: 20px;
+        }
+        .mobile-input{
+        margin-bottom: 14px;
+
+
+        }
+        .email-input{
+        margin-bottom: 14px;
+
+        }
+        .captcha-input{
+
+        }
+        .form-group-custom{
+
+        }
+        .sub1{
+          background-color: #9dd60b;
+          color: white;
+          min-width: 150px;
+          font-weight: 600;
+          border-radius: 18px;
+        }
+        .login-form-entry{
+          display: inline-block;
+        }
+        .modal-header .close{
+          padding: 0;
+         margin: 0;
+        }
+        .modal-footer>:not(:last-child){
+          margin-right: 0;
+          margin-left: 5px;
+        }
+        .modal-footer>:not(:first-child){
+          margin-left: 0;
+          margin-right: 5px;
+        }
+        .gameMainSection{
+          direction: rtl;
+          text-align: justify;
+          margin-top: 1px;
+        }
+        .timer {
+          margin-top: 175px;
+        }
+        .health{
+          margin-top: 201px;
+          margin-right: 32px;
+        }
+          .health .heart{
+            width: 30px;
+          }
+        .heart-on{
+          background: url(<?php echo $blogBaseUrl ;?>/static/img/heart-on.png);
+        }
+        .heart-off{
+          background: url(<?php echo $blogBaseUrl ;?>/static/img/heart-off.png);
+        }
+        .questionBox{
+          background-color: #ffe4ad;
+          border-radius: 20px;
+          min-height: 240px;
+          margin-top: -28px;
+          border-style: solid;
+          border-width: 5px;
+          border-color: white;
+        }
+        .lvl-number{
+          max-width: 94px;
+              margin: 0 auto;
+              display: flex;
+              margin-bottom: -55px;
+              margin-top: -39px;
+        }
+        .lvl-number-step{
+          font-size: 3.5rem;
+          color: white;
+          font-weight: 700;
+          text-align: center;
+              margin-top: -23px;
+        }
+        .questionPatagraph{
+          text-align: center;
+              direction: ltr;
+              margin: 0 auto;
+              max-width: 90%;
+              margin-top: -25px;
+        }
+        .sub0{
+          color: white;
+          min-width: 120px;
+          font-weight: 600;
+          border-radius: 18px;
+        }
+        .sub1{
+            background-color: #c2c2c2;
+        }
+        .sub2{
+          background-color: #9dd60b;
+        }
+        .answers-btn{
+          background: #ffc000;
+              border-radius: 15px;
+              padding: 21px 0px 0px 0px;
+              max-width: 89%;
+              margin: 0 auto;
+              min-height: 66px;
+        }
+        .nex-question-btn{
+          position: relative;
+          text-align: center;
+        }
+        .asnwers-btns-sections{
+          text-align: center;
+        }
+        input[type="radio"]:checked{
+        display: none;
+        }
+        input[type="radio"]{
+        display: none;
+        }
+        form input[type="radio"]:checked + p {
+          background-color: #ff9000;
+          -webkit-box-shadow: inset 0px 0px 100px -24px rgba(0,0,0,0.75);
+          -moz-box-shadow: inset 0px 0px 100px -24px rgba(0,0,0,0.75);
+          box-shadow: inset 0px 0px 100px -24px rgba(0,0,0,0.75);
+        }
+        .emtiaz-section{
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+        .circle-emtiaz-khamosh{
+          background-color: #666d8a;
+         height: 30px;
+         width: 30px;
+         border-radius: 100%;
+         -webkit-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+         -moz-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+         box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+        margin-right: 5px;
+         display: inline-block;
+        }
+        .circle-emtiaz-on{
+          background-color: rgb(81,156,81);
+         height: 30px;
+         width: 30px;
+         border-radius: 100%;
+         -webkit-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+         -moz-box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+         box-shadow: inset 0px 0px 20px 3px rgba(59,67,88,0.93);
+        margin-right: 5px;
+         display: inline-block;
+        }
+        .emtiazha-soton1{
+        padding: 0px 0px 0px 0px;
+        margin-top: 20px;
+        }
+        .emtiazha-soton2{
+        padding: 0px 0px 0px 0px;
+        margin-top: -7px;
+        }
+        .emtiazha-soton3{
+        padding: 0px 0px 0px 0px;
+        margin-top: -4px;
+        }
+        .emtiazha-soton4{
+        padding: 0px 0px 0px 0px;
+        margin-top: -4px;
+        }
+        .emtiazha-soton5{
+        padding: 0px 0px 0px 0px;
+        margin-top: -4px;
+        }
+        .emtiazha-soton{
+        padding: 0px 0px 0px 0px;
+        }
+        .khatezir{
+          background-color: #3b435a;
+          height: 2px;
+          width: 70%;
+          border-radius: 13px;
+          margin-right: 13%;
+          position: absolute;
+        }
+        .khate1{
+        margin-top: 35px;
+        }
+        .khate2{
+        margin-top: 66px;
+        }
+        .khate3{
+        margin-top: 100px;
+        }
+        .khate4{
+        margin-top: 132px;
+        }
+        .khate5{
+        margin-top: 161px;
+        }
+        .gifts-rast{
+              margin-top: 32px;
+        }
+        .gift{
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+        }
+        .gift-ok{
+          -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(0%);
+        }
+        /** Mobile media query **/
+        @media screen and (max-width: 800px) and (min-width: 310px) {
+            .hiden{
+                display: none;
+            }
+            .gameMainSection{
+              margin-top: 40px;
+            }
+            .backToSite1{
+            font-size: 9px;
+            margin-bottom: 20px;
+            }
+            .backToSite2{
+            font-size: 9px;
+            }
+            .backToSite3{
+              font-size: 9px;
+            }
+            .winergif{
+              max-width: 196px;
+            }
+            .prizeDesc-money{
+              font-size: 8px;
+            }
+            .prizeDesc-code{
+                font-size: 8px;
+            }
+            .prize-title-money{
+              font-size: 15px;
+                  line-height: 32px;
+            }
+            .prize-title-code{
+              font-size: 15px;
+                  line-height: 32px;
+            }
+            .loginform-div{
+              margin-top: 30px;
+            }
+            .hiden{
+              display: none;
+            }
+            .oxinup-logo{
+              margin-top: 10px;
+              max-width: 250px;
+            }
+            .bazikon{
+              font-weight: 700;
+                font-size: 23px;
+            }
+            p{
+              font-size: 15px
+            }
+            .hiden{
+              display: none;
+            }
+            .logo-img{
+              max-width: 148px;
+                  margin-bottom: 12px;
+            }
+            .heart-off{
+              max-width: 17px;
+            }
+            .heart-on{
+              max-width: 17px;
+            }
+            .health{
+              margin-right: 0px;
+              margin-top: 56px;
+            }
+            .logo{
+              text-align: center;
+            }
+            .timer {
+            margin-top: 54px;
+            }
+            .logo-img{
+              max-width: 110px;
+                margin-bottom: 21px;
+                margin-top: 24px;
+            }
+            .answers-btn{
+              margin-bottom: 15px;
+            }
+            .asnwers-btns-sections1{
+              margin-top: 30px;
+            }
+            .gifts-10-hezar{
+              max-width: 100px;
+            }
+            .gifts-40-hezar{
+              max-width: 100px;
+            }
+            .gifts-70-hezar{
+              max-width: 100px;
+              margin-top: 22px;
+            }
+            .gifts-100-hezar{
+              max-width: 100px;
+                  margin-top: 22px;
+            }
+            .gifts-50-hezar{
+              max-width: 100px;
+                  margin-top: 22px;
+            }
+            .gifts-coin{
+              max-width: 100px;
+                  margin-top: 22px;
+            }
+            .gifts-rast{
+              padding-right: 0px;
+              padding-left: 0px;
+            }
+            
+
+            .circle-emtiaz-khamosh{
+              height: 15px;
+                width: 15px;
+            }
+            .gifts-rast {
+                 margin-top: 0px;
+            }
+            .gifts-chap{
+              padding-right: 0px;
+              padding-left: 0px;
+            }
+            .khate1 {
+              display: none;
+            }
+            .khate2 {
+              display: none;
+            }
+            .khate3 {
+              display: none;
+            }
+            .khate4 {
+              display: none;
+            }
+            .khate5 {
+              display: none;
+            }
+            .emtiazha-soton1{
+                  margin-top: 0px;
+            }
+            .emtiazha-soton2{
+              margin-top: -2px;
+            }
+            .emtiazha-soton3{
+              margin-top: 8px;
+            }
+            .emtiazha-soton4{
+                margin-top: -2px;
+            }
+            .emtiazha-soton5{
+              margin-top: 17px;
+            }
+            .circle-emtiaz-khamosh{
+              margin-right: 0px;
+            }
+        }
+
+        /** Desktop media query **/
+        @media screen and (max-width: 2000px) and (min-width: 801px) {
+          .gameMainSection{
+            margin-top: 80px;
+          }
+          .loginform-div{
+            margin-top: 100px;
+            }
+            .oxinup-logo{
+              max-width: 350px;
+              margin-top: -35px;
+            }
+            .bazikon{
+              font-weight: 700;
+                font-size: 44px;
+            }
+            .captcha-sec{
+              float: left;
+            }
+            .cpatcha-input-secP{
+              float: right;
+          }
+          .logo-img{
+            max-width: 500px;
+          margin-right: -119px;
+          margin-bottom: -42px;
+          }
+          .answers-btn{
+            margin-bottom: 15px;
+          }
+          .asnwers-btns-sections1{
+            margin-top: -47px;
+          }
+          .gifts-10-hezar{
+            max-width: 126px;
+          }
+          .gifts-40-hezar{
+            max-width: 126px;
+          }
+          .gifts-70-hezar{
+            max-width: 126px;
+                margin-top: 22px;
+          }
+          .gifts-100-hezar{
+            max-width: 126px;
+                margin-top: 22px;
+          }
+          .gifts-50-hezar{
+            max-width: 126px;
+                margin-top: 22px;
+          }
+          .gifts-coin{
+            max-width: 126px;
+                margin-top: 22px;
+          }
+        }
+        /* timer Styles */
+        .time_circles > div > span{
+          color: white;
+        }
+        .time_circles > div > h4{
+            color: white;
+        }
+
+                /*Question page*/
+
+                /* Timer */
+                .time_circles {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                }
+                  .time_circles > div {
+                    position: absolute;
+                    text-align: center;
+                  }
+                    .time_circles > div > h4 {
+                      margin: 0;
+                      padding: 0;
+                      text-align: center;
+                      text-transform: uppercase;
+                      font-family: 'Century Gothic', Arial;
+                      line-height: 1;
+                    }
+                    .time_circles > div > span {
+                      margin: 0;
+                      padding: 0;
+                      display: block;
+                      width: 100%;
+                      text-align: center;
+                      font-family: 'IRSans', Arial;
+                      line-height: 1;
+                      font-weight: bold;
+                    }

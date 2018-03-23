@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|css|fonts|js|woff|eot|ttf|svg|woff2|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA] 
+
+# DISABLE CACHING
+<IfModule mod_headers.c>
+	Header set Cache-Control "no-cache, no-store, must-revalidate"
+	Header set Pragma "no-cache"
+	Header set Expires 0
+</IfModule>

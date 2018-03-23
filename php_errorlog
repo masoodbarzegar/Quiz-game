@@ -1,0 +1,94 @@
+[10-Mar-2018 07:23:10 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 67
+[10-Mar-2018 07:23:11 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 67
+[10-Mar-2018 07:56:49 CST6CDT] PHP Parse error:  syntax error, unexpected ')' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 78
+[11-Mar-2018 04:44:43 CST6CDT] PHP Parse error:  syntax error, unexpected 'image' (T_STRING), expecting ')' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 82
+[11-Mar-2018 04:45:02 CST6CDT] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 82
+[11-Mar-2018 05:40:26 CST6CDT] PHP Fatal error:  Call to undefined method Game::create_catcha() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 54
+[11-Mar-2018 06:30:41 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/code.php on line 3
+[11-Mar-2018 06:30:44 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/code.php on line 3
+[11-Mar-2018 06:30:46 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/code.php on line 3
+[11-Mar-2018 06:30:47 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/code.php on line 3
+[11-Mar-2018 07:46:48 CST6CDT] PHP Parse error:  syntax error, unexpected '$game_id' (T_VARIABLE) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 187
+[12-Mar-2018 03:30:47 CST6CDT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 350
+[12-Mar-2018 05:12:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 247
+[12-Mar-2018 09:09:29 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:09:33 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:09:35 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:09:38 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:09:42 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:10:47 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:15:32 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:15:59 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:16:00 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:16:00 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:16:02 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:16:03 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:16:06 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[12-Mar-2018 09:16:09 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 261
+[13-Mar-2018 01:38:19 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 270
+[13-Mar-2018 01:38:52 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 270
+[13-Mar-2018 02:01:31 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 270
+[13-Mar-2018 02:02:54 CST6CDT] PHP Parse error:  syntax error, unexpected '<' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 475
+[13-Mar-2018 02:32:43 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 270
+[13-Mar-2018 04:51:52 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 04:52:00 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 04:52:12 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 04:52:17 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 04:55:12 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 04:59:13 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 05:00:12 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 05:02:55 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 05:02:58 CST6CDT] PHP Fatal error:  Call to undefined method Game::userdata() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 267
+[13-Mar-2018 23:49:17 CST6CDT] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/game-one.php on line 139
+[13-Mar-2018 23:49:40 CST6CDT] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/game-one.php on line 139
+[13-Mar-2018 23:49:48 CST6CDT] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /home/oxinchannel/public_html/game/application/views/front/game-one.php on line 139
+[14-Mar-2018 07:23:36 CST6CDT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 373
+[14-Mar-2018 07:24:09 CST6CDT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 373
+[14-Mar-2018 07:26:01 CST6CDT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 373
+[14-Mar-2018 07:37:18 CST6CDT] PHP Fatal error:  Cannot use object of type stdClass as array in /home/oxinchannel/public_html/game/application/views/front/finish.php on line 45
+[14-Mar-2018 07:45:30 CST6CDT] PHP Parse error:  syntax error, unexpected ',' in /home/oxinchannel/public_html/game/application/models/Award_model.php on line 53
+[14-Mar-2018 07:55:51 CST6CDT] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/oxinchannel/public_html/game/application/views/front/finish.php on line 50
+[15-Mar-2018 06:27:12 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 67
+[16-Mar-2018 04:11:46 CST6CDT] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 105
+[16-Mar-2018 04:12:25 CST6CDT] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 105
+[16-Mar-2018 09:54:50 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 513
+[16-Mar-2018 09:55:11 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 513
+[16-Mar-2018 09:55:38 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 513
+[16-Mar-2018 09:55:43 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 513
+[16-Mar-2018 12:23:09 CST6CDT] PHP Parse error:  syntax error, unexpected 'time_finish' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 412
+[17-Mar-2018 02:45:02 CST6CDT] PHP Fatal error:  Call to a member function get_disc() on null in /home/oxinchannel/public_html/game/application/controllers/Admin.php on line 412
+[17-Mar-2018 02:53:28 CST6CDT] PHP Fatal error:  Call to undefined function vardump() in /home/oxinchannel/public_html/game/application/views/admin/player_disc_list.php on line 9
+[18-Mar-2018 03:50:30 CST6CDT] PHP Parse error:  syntax error, unexpected ';' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 132
+[18-Mar-2018 03:51:23 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 150
+[18-Mar-2018 03:51:25 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 150
+[18-Mar-2018 03:51:48 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 150
+[18-Mar-2018 03:51:50 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 150
+[18-Mar-2018 03:51:51 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 150
+[18-Mar-2018 03:51:52 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 150
+[18-Mar-2018 03:52:09 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 151
+[18-Mar-2018 03:52:10 CST6CDT] PHP Parse error:  syntax error, unexpected 'randomGen' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 151
+[18-Mar-2018 03:52:31 CST6CDT] PHP Fatal error:  Call to undefined function level_qdata() in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 127
+[18-Mar-2018 03:52:55 CST6CDT] PHP Fatal error:  Function name must be a string in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 128
+[18-Mar-2018 05:44:47 CST6CDT] PHP Parse error:  syntax error, unexpected ')', expecting ';' or '{' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 606
+[18-Mar-2018 05:45:19 CST6CDT] PHP Parse error:  syntax error, unexpected ')', expecting ';' or '{' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 606
+[18-Mar-2018 05:45:58 CST6CDT] PHP Parse error:  syntax error, unexpected ')', expecting ';' or '{' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 606
+[18-Mar-2018 05:46:16 CST6CDT] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 611
+[18-Mar-2018 08:19:18 CST6CDT] PHP Parse error:  syntax error, unexpected 'array_push' (T_STRING) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 132
+[18-Mar-2018 08:19:35 CST6CDT] PHP Parse error:  syntax error, unexpected 'array_push' (T_STRING) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 132
+[18-Mar-2018 08:21:10 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 80
+[18-Mar-2018 08:26:02 CST6CDT] PHP Parse error:  syntax error, unexpected '$bb' (T_VARIABLE) in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 135
+[18-Mar-2018 23:31:08 CST6CDT] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 529
+[19-Mar-2018 06:06:55 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:06:57 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:06:59 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:07:01 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:07:02 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:07:03 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:07:03 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:07:03 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 06:07:04 CST6CDT] PHP Fatal error:  Call to undefined method Game::get_player_code() in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 568
+[19-Mar-2018 08:33:34 CST6CDT] PHP Parse error:  syntax error, unexpected ',' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 136
+[19-Mar-2018 08:34:15 CST6CDT] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 136
+[19-Mar-2018 08:34:19 CST6CDT] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 136
+[19-Mar-2018 08:34:21 CST6CDT] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 136
+[19-Mar-2018 22:52:53 CST6CDT] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 32
