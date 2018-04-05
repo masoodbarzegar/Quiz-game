@@ -188,4 +188,40 @@ class Game_model extends CI_Model {
         shuffle($numbers);
         return array_slice($numbers, 0, $quantity);
     }
+
+
+
+
+    public function record_count() {
+        return $this->db->count_all("game");
+    }
+
+    public function fetch_countries($limit, $start) {
+        $this->db->limit($limit, $start);
+        $query = $this->db->get("game");
+         $datestring = '%Y - %m - %d - %h:%i %a';
+
+        if ($query->num_rows() > 0) {
+             $i=0;
+            foreach ($query->result() as $row) {
+                $gmtime = $row->game_stime;
+                $mytime = gmt_to_local( $gmtime ,'UP35', false);
+
+
+                $game_list[$i]['game_id']    = $row->game_id;
+                $game_list[$i]['player_id']  = $row->player_id;                
+                $game_list[$i]['game_token'] = $row->game_token; 
+                $game_list[$i]['game_stime'] = mdate($datestring, $mytime);
+                if($row->award_id == 3){
+                    $game_list[$i]['award_id']   =  $row->award_id.'/'.$row->player_id;
+                }else{
+                    $game_list[$i]['award_id']   = $row->award_id;
+                }
+                $i++;
+            }
+            return $game_list;
+        }
+        return false;
+   }
+
 }

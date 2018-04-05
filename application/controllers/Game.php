@@ -499,9 +499,10 @@ class Game extends CI_Controller {
 
             $data['award'] = $this->Award_model->get_award_disc_finish($award_id);
             $this->Award_model->update_disc($data['award']['discont_id'], $game_data['player_id']);
-
+            $this->send_messege_end($game_data['player_id'] , $data['award']['discont_code'] , $award_id);
         }else{
             $data['award'] = $this->Award_model->get_award_finish($award_id); 
+            $this->send_messege_end($game_data['player_id'] , $data['award']['discont_code'] , $award_id);
         }
         $this->Award_model->update_game_award($game_data['game_id'] , $award_id);
         //$this->Player_model->update_player($game_data['player_id'] , 1 );
@@ -524,9 +525,12 @@ class Game extends CI_Controller {
 
             $data['award'] = $this->Award_model->get_award_disc_finish($award_id);
             $this->Award_model->update_disc($data['award']['discont_id'], $game_data['player_id']);
+             $this->send_messege_end($game_data['player_id'] , $data['award']['discont_code'] , $award_id);
 
         }else{
-            $data['award'] = $this->Award_model->get_award_finish($award_id); 
+            $data['award'] = $this->Award_model->get_award_finish($award_id);
+             
+            $this->send_messege_end($game_data['player_id'] , $data['award']['discont_code'] , $award_id);
         }
         $this->Award_model->update_game_award($game_data['game_id'] , $award_id);
         //$this->Player_model->update_player($game_data['player_id'] , 1 );
@@ -627,18 +631,18 @@ class Game extends CI_Controller {
     }
     
     public function confirm_code(){
-        // $this->load->model('Player_model');
+        $this->load->model('Player_model');
 
-        // $player_id   = $this->session->userdata('player_id');
-        // $player_code = $this->Player_model->get_player_code($player_id);
+        $player_id   = $this->session->userdata('player_id');
+        $player_code = $this->Player_model->get_player_code($player_id);
 
-        // if($this->input->post('confirm_code') != $player_code['player_code'] ){
-        //     $this->form_validation->set_message('confirm_code', 'کد تایید نادرست است.');
-        //     return false;
-        // }else{
-        //     return true;
-        // }
-        return true;
+        if($this->input->post('confirm_code') != $player_code['player_code'] ){
+            $this->form_validation->set_message('confirm_code', 'کد تایید نادرست است.');
+            return false;
+        }else{
+            return true;
+        }
+        //return true;
     }
 
     public function send_messege($player_mob){
@@ -654,6 +658,18 @@ class Game extends CI_Controller {
 
         $num = $player_mob;
         $url = 'http://bornarabin.com/msg/index.php?code='.$msg.'&num='. $num ;
+        $result = file_get_contents($url);
+        return true;  
+        
+
+    }
+    public function send_messege_end($player_id , $discont_code , $award_id){
+
+        $this->load->model('Player_model');
+        $player_data = $this->Player_model->get_player_mob($player_id);
+        
+        $numb = $player_data['player_mob'];
+        $url = 'http://bornarabin.com/msgend/index.php?award='.$award_id.'&num='. $numb .'&discont=' . $discont_code;
         $result = file_get_contents($url);
         return true;  
         

@@ -10,6 +10,7 @@ class Admin extends CI_Controller {
         }
         $this->load->library('form_validation');
         $this->load->library('options');
+        $this->load->library('pagination');
     }
     public function index(){
         
@@ -368,11 +369,24 @@ class Admin extends CI_Controller {
     public function game_log(){
         
         $this->load->model('Game_model');
-        
+        $config = array();
+        $config["base_url"] = base_url() . "_p123/lgame";
+        $config["total_rows"] = $this->Game_model->record_count();
+        $config["per_page"] = 1000;
+        $config["uri_segment"] = 3;
 
+        $this->pagination->initialize($config);
+
+        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data["games_list"] = $this->Game_model->fetch_countries($config["per_page"], $page);
+        $data["links"] = $this->pagination->create_links();
+
+
+	$data['total_rows'] = $config["total_rows"] ;
+	$data['a'] = $this->uri->segment(3);
         $data['user_state'] = $this->user_state;
         $data['title'] = 'Game Log';
-        $data['games_list'] = $this->game_list();
+        //$data['games_list'] = $this->game_list();
             
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/game_list', $data);

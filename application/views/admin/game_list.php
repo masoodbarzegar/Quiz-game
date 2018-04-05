@@ -119,5 +119,5 @@ $blogBaseUrl = $this->config->item('base_url');
             ?>
 
     </div>  
-
+<p><?php echo $links; ?></p>
 </div>

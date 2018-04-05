@@ -92,3 +92,7 @@
 [19-Mar-2018 08:34:19 CST6CDT] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 136
 [19-Mar-2018 08:34:21 CST6CDT] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/oxinchannel/public_html/game/application/models/Game_model.php on line 136
 [19-Mar-2018 22:52:53 CST6CDT] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/oxinchannel/public_html/game/application/controllers/Game.php on line 32
+[02-Apr-2018 00:32:00 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/oxinchannel/public_html/game/application/controllers/Admin.php on line 40
+[03-Apr-2018 06:25:14 CST6CDT] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/oxinchannel/public_html/game/application/controllers/Admin.php on line 379
+[03-Apr-2018 06:25:30 CST6CDT] PHP Parse error:  syntax error, unexpected 'funct' (T_STRING), expecting variable (T_VARIABLE) in /home/oxinchannel/public_html/game/application/controllers/Admin.php on line 102
+[03-Apr-2018 06:25:32 CST6CDT] PHP Fatal error:  require_once(): Failed opening required 'phpspreadsheet/vendor/autoload.php' (include_path='.:/usr/local/php56/pear') in /home/oxinchannel/public_html/game/application/controllers/Admin.php on line 370

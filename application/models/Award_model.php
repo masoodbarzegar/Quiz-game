@@ -50,7 +50,7 @@ class Award_model extends CI_Model {
             $row = $query->first_row();
 
             $code['award_id'] = 3;
-            $code['award_text'] = '70 هزار تومان هدیه ثبت نام رایگان با کد';
+            $code['award_text'] = '70 هزار تومان هدیه ثبت نام رایگان در دوره یکساله با کد';
             $code['discont_id'] = $row->discont_id;
             $code['discont_code'] = $row->discont_code;
             

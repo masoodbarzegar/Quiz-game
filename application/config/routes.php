@@ -71,6 +71,8 @@ $route['_p123/caward'] = 'admin/award_create';
 $route['_p123/lplayer'] = 'admin/player_log';
 $route['_p123/lplayergame/:num'] = 'admin/player_game_log/$1';
 $route['_p123/lgame'] = 'admin/game_log';
+$route['_p123/lgame/:num'] = 'admin/game_log/$1';
+
 $route['_p123/show_award/3/:num'] = 'admin/show_award/3/$1';
 
 

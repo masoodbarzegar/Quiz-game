@@ -67,6 +67,18 @@ class Player_model extends CI_Model {
             return false;
         }
     }
+    public function get_player_mob($player_id){
+        $query = $this->db->get_where('player' , array('player_id' =>  $player_id ) );
+        
+        if ($query->num_rows() > 0) {
+            $row = $query->row_array();
+            $player_data['player_mob'] = $row['player_mob'];
+            
+            return $player_data;
+        }else{
+            return false;
+        }
+    }
     public function get_player_list(){
         $sql = "SELECT * FROM  player";
 
